@@ -29,3 +29,10 @@ a.get('/menu', (request, response)=>{
     });
    
 a.get('/cancella', (request, response)=>{
+   fs.readFile("salva.json", (err, dati)=>{
+    var scritte = JSON.parse(dati);
+      scritte = "";
+      fs.writeFile("salva.json", JSON.stringify(scritte), (err)=>{console.log(err);});
+      reponse.send("<h1>Ho cancellato</h1>);
+   });
+   });
