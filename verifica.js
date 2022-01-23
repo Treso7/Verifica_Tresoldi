@@ -17,9 +17,15 @@ a.get('/menu', (request, response)=>{
        scritte.forEach(elemento => {
            if (elemento.username == nome) {
                  if(elemento.password == passwoood) {
-                     var resposta = "<html>
-                       response.send(
+                     var resposta = "<html><head><title>Compito</title></head><body>"+elemento.gruppo+"<br><table>";
+                         for (let i = 0; i < elemento.meat.length; i++) {
+                           resposta += "<tr><td>"+elemento.meat[i]+"</td></tr>";
+            }
+                    resposta += "<form method='get' action='cancella'><input type='submit' value='calcella'></form></body><html>";
+                       response.send(resposta);
                     }
                 }
             });
+    });
    
+a.get('/cancella', (request, response)=>{
