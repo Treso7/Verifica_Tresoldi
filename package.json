@@ -1,0 +1,22 @@
+{
+  "name": "Verifica_Tresoldi",
+  "version": "1.0.0",
+  "description": "verifica",
+  "main": "verifica.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Treso7/Verifica_Tresoldi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Treso7/Verifica_Tresoldi/issues"
+  },
+  "homepage": "https://github.com/Treso7/Verifica_Tresoldi#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
